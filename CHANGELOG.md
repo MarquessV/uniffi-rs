@@ -12,8 +12,6 @@
 
 ## [[UnreleasedUniFFIVersion]] (backend crates: [[UnreleasedBackendVersion]]) - (_[[ReleaseDate]]_)
 
-[All changes in [[UnreleasedUniFFIVersion]]](https://github.com/mozilla/uniffi-rs/compare/v0.25.3...HEAD).
-
 ## v0.25.3 (backend crates: v0.25.3) - (_2023-12-07_)
 
 [All changes in v0.25.3](https://github.com/mozilla/uniffi-rs/compare/v0.25.2...v0.25.3).
