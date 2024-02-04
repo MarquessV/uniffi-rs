@@ -322,13 +322,13 @@ pub fn uniffi_rustbuffer_reserve(
 
 fn _uniffi_rustbuffer_reserve(
     buf: RustBuffer,
-    additional: i32,
+    additional: u64,
     call_status: &mut RustCallStatus,
 ) -> RustBuffer {
     rust_call(call_status, || {
         let additional: usize = additional
             .try_into()
-            .expect("additional buffer length negative or overflowed");
+            .expect("additional buffer length overflowed");
         let mut v = buf.destroy_into_vec();
         v.reserve(additional);
         Ok(RustBuffer::from_vec(v))
